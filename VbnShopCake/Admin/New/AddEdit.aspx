@@ -15,9 +15,25 @@
                 <b>Tên tin tức</b>
             </td>
             <td>
-                :&nbsp;<asp:TextBox ID="txtSubject" runat="server" Width="450px"></asp:TextBox>
+                &nbsp;<asp:TextBox ID="txtSubject" runat="server" Width="450px"></asp:TextBox>
                 <asp:RequiredFieldValidator ControlToValidate="txtSubject" Display="Dynamic" Text="*"
                     ID="RequiredFieldValidator1" runat="server" ErrorMessage="Nhập tên tin tức"></asp:RequiredFieldValidator>
+            </td>
+        </tr>
+        <tr>
+            <td width="120px">
+                <b>Mô tả</b>
+            </td>
+            <td>
+                &nbsp;<asp:TextBox ID="txtDescription" runat="server" Width="450px" TextMode="MultiLine"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td width="120px">
+                <b>Hiện menu</b>
+            </td>
+            <td>
+                &nbsp;<asp:CheckBox ID="chkIsMenu" runat="server" Text="Hiện thị menu" />
             </td>
         </tr>
         <tr valign="top">

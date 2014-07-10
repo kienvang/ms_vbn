@@ -54,6 +54,7 @@ public partial class Admin_Catalog_Controls_GetCatalogs : System.Web.UI.UserCont
             lkPrev.CommandArgument = _cat.ParentId.ToString();
             lkPrev.Text = _cat.Id.ToString();
             lblCatName0.Text = _cat.CatalogName;
+            lblCatCode0.Text = _cat.CatCode;
             lblAmount.Text = _cat.ProductAmount.ToString();
 
             lkSelect.CommandArgument = _cat.Id.ToString();

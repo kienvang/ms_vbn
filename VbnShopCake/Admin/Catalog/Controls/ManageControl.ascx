@@ -113,11 +113,11 @@
             <th width="60px">
                 Mã
             </th>
-            <th>
-                Tên Loại
-            </th>
             <th width="80px">
                 Mã Loại
+            </th>
+            <th>
+                Tên Loại
             </th>
             <th>
                 Tooltip
@@ -145,10 +145,10 @@
                 </div>
             </td>
             <td>
-                <%= _cat.CatalogName %>
+                <%= _cat.CatCode %>
             </td>
             <td>
-                <%= _cat.CatCode %>
+                <%= _cat.CatalogName %>
             </td>
             <td>
                 <%= _cat.ToolTip %>
@@ -187,10 +187,10 @@
                         </div>
                     </td>
                     <td>
-                        <%# Eval("CatalogName") %>
+                        <%# Eval("CatCode") %>
                     </td>
                     <td>
-                        <%# Eval("CatCode") %>
+                        <%# Eval("CatalogName") %>
                     </td>
                     <td>
                         <%# Eval("Tooltip") %>

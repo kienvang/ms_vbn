@@ -61,7 +61,7 @@ public partial class Admin_Document_Control_AddDocument : System.Web.UI.UserCont
             if (UpLoadDocument.HasFile)
             {
                 obj.PathName = FileUploadControl.FullPath(UpLoadDocument, EnumsFile.Document, obj.TextId, DocumentFields.PathName.MaxLength);
-                obj.FileSize = Math.Round((double)UpLoadDocument.PostedFile.ContentLength / (1024 * 1024), 3);
+                obj.FileSize = (long)Math.Round((double)UpLoadDocument.PostedFile.ContentLength / (1024 * 1024), 3);
             }
             else
             {
@@ -77,7 +77,7 @@ public partial class Admin_Document_Control_AddDocument : System.Web.UI.UserCont
             {
                 obj.PathName = Config.UploadDoc().TrimEnd('/') + "/" + ddlSelectFile.SelectedValue;
                 FileInfo f = new FileInfo(Server.MapPath("~" + obj.PathName));
-                obj.FileSize = Math.Round((double)f.Length / (1024 * 1024), 3);
+                obj.FileSize = (long)Math.Round((double)f.Length / (1024 * 1024), 3);
             }
             else
             {

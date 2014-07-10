@@ -41,6 +41,8 @@ public partial class Admin_New_AddEdit : System.Web.UI.Page
         {
             txtSubject.Text = news.Subject;
             txtBody.Value = news.Body;
+            txtDescription.Text = news.Description;
+            chkIsMenu.Checked = news.IsMenu;
 
             btnAdd.Visible = false;
             btnEdit.Visible = true;
@@ -56,6 +58,8 @@ public partial class Admin_New_AddEdit : System.Web.UI.Page
         news.Subject = Filter.GetMaxString(txtSubject.Text.Trim(), NewsFields.Subject.MaxLength);
         news.Body = txtBody.Value;
         news.CreatedBy = Util.CurrentUserName;
+        news.IsMenu = chkIsMenu.Checked;
+        news.Description = txtDescription.Text.Trim();
 
         return news;
     }

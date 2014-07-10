@@ -15,7 +15,10 @@ public partial class DangNhap : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (!string.IsNullOrEmpty(Library.Tools.Util.CurrentUserName))
+        {
+            Response.Redirect("/");
+        }
     }
 
     protected void Login1_LoggedIn(object sender, EventArgs e)

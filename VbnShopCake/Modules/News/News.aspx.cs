@@ -31,6 +31,7 @@ public partial class Modules_News_News : System.Web.UI.Page
         {
             lblSubject.Text = news.Subject;
             lblBody.Text = news.Body;
+            lblDescription.Text = !string.IsNullOrEmpty(news.Description) ? "<p class='news_des'>" + news.Description + "</p>" : "";
         }
     }
 }

@@ -12,13 +12,13 @@
         <%} %>
         <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutText="Thoát" LoginText="Đăng nhập"
             OnLoggedOut="LoginStatus1_LoggedOut" />
-            <asp:HyperLink ID="lk" runat="server" ToolTip="Đăng ký" NavigateUrl="http://dangnhap.vbn.vn/Dangky.aspx">Đăng ký</asp:HyperLink>
+            <asp:HyperLink ID="lk" runat="server" ToolTip="Đăng ký" NavigateUrl="/Dangky.aspx">Đăng ký</asp:HyperLink>
         <%--<a title="Thoát" href="#" class="button">Thoát</a>--%>
     </p>
     <fieldset>
         <%if (string.IsNullOrEmpty(Library.Tools.Util.CurrentUserName))
           { %>
-        <a href="<%= Modules.Role.CheckRoles.CreateInstant().GetUrlDirect(Request.RawUrl) %>"
+        <a href="<%= Modules.Role.CheckRoles.CreateInstant().GetUrlDirect("") %>"
             title="Đăng nhập">Đăng nhập</a>
         <%} %>
     </fieldset>

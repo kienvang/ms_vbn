@@ -27,6 +27,9 @@
             <table border="1" cellpadding="2" cellspacing="2" class="grid">
                 <tr class="title">
                     <th width="80px">
+                        ID
+                    </th>
+                    <th width="80px">
                         Mã
                     </th>
                     <th>
@@ -44,6 +47,9 @@
                             <asp:LinkButton ID="lkPrev" runat="server" CommandName="prev" OnCommand="lkPrev_Command"
                                 ValidationGroup="cats"></asp:LinkButton>
                         </div>
+                    </td>
+                    <td>
+                        <asp:Label ID="lblCatCode0" runat="server"></asp:Label>
                     </td>
                     <td>
                         <asp:Label ID="lblCatName0" runat="server"></asp:Label>
@@ -66,6 +72,9 @@
                                     <asp:LinkButton ID="lk" runat="server" CommandArgument='<%# Eval("Id") %>' CommandName="next"
                                         ValidationGroup="cats"><%# Eval("Id") %></asp:LinkButton>
                                 </div>
+                            </td>
+                            <td>
+                                <%# Eval("CatCode")%>
                             </td>
                             <td>
                                 <%# Eval("CatalogName") %>

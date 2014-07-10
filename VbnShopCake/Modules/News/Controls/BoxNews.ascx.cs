@@ -22,11 +22,10 @@ public partial class Modules_News_Controls_BoxNews : System.Web.UI.UserControl
 
     void LoadData()
     {
-        DataTable table = NewsManager.CreateInstant().SelectByIsVisibleRDT(true);
+        DataTable table = NewsManager.CreateInstant().GetNewsMenu();
 
         if (table != null && table.Rows.Count > 0)
         {
-            table.DefaultView.Sort = "Subject";
             repNews.DataSource = table.DefaultView;
             repNews.DataBind();
         }

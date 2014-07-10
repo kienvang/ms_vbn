@@ -58,9 +58,7 @@
                             <%# Eval("UserName")%>
                         </td>
                         <td align="center">
-                            <asp:LinkButton ID="lk" runat="server" CommandName="approve" CommandArgument='<%# Eval("Id") %>'>
-                                <asp:CheckBox ID="chk" runat="server" Checked='<%# Eval("Approved") %>' />
-                            </asp:LinkButton>
+                            <a href="Detail.aspx?id=<%# Eval("Id") %>"><%# !Boolean.Parse(Eval("Approved").ToString()) ? "Phản hồi" : "Đã trả lời" %></a>
                         </td>
                     </tr>
                 </ItemTemplate>

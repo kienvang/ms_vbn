@@ -18,6 +18,8 @@
     <script src="/js/jquery.contextMenu.js" type="text/javascript"></script>
 
     <script src="/js/jquery.numeric.js" type="text/javascript"></script>
+    
+    <script src="/Admin/js/script.js" type="text/javascript"></script>
 
     <link href="/Admin/css/ui-lightness/ui-1.7.2.custom.css" rel="stylesheet" type="text/css" />
     <link href="/css/jquery.slidemenu.css" rel="stylesheet" type="text/css" />
@@ -36,21 +38,19 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <%--<asp:ScriptManager ID="scriptmanager" runat="server">
-    </asp:ScriptManager>--%>
     <div>
         <div id="wrapper">
             <div id="container">
                 <div id="header1">
                     <h1>
-                        <a href="<%= Library.Tools.UrlBuilder.RootUrl %>" title="Vietnam Bakery Network">
-                            <asp:Image ID="imgLogo" runat="server" Width="200px" Height="194px" ToolTip="Vietnam Bakery Network"
-                                AlternateText="Vietnam Bakery Network" />
+                        <a href="<%= Library.Tools.UrlBuilder.RootUrl %>" title="Mỹ Sướng Bakery">
+                            <asp:Image ID="imgLogo" runat="server" Width="200px" Height="194px" ToolTip="Mỹ Sướng Bakery"
+                                AlternateText="Mỹ Sướng Bakery" />
                         </a>
                     </h1>
                     <p>
-                        <asp:Image ID="imgBanner" runat="server" Width="750px" Height="177px" ToolTip="Vietnam Bakery Network"
-                            AlternateText="Vietnam Bakery Network" />
+                        <asp:Image ID="imgBanner" runat="server" Width="750px" Height="177px" ToolTip="Mỹ Sướng Bakery"
+                            AlternateText="Mỹ Sướng Bakery" />
                     </p>
                 </div>
                 <div id="">
@@ -63,8 +63,13 @@
                     <div class="jqueryslidemenu" id="myslidemenu">
                         <ul>
                             <li><a href="/" class="menulevel0">Trang Chủ</a> </li>
-                            <li><a href="http://congdong.vbn.vn/Admin/" class="menulevel0">Cộng đồng</a> </li>
-                            <li><a href="/Admin/" class="menulevel0">Quản Trị</a> </li>
+                            <li><a href="/Admin/Account/Account.aspx" class="menulevel0">Tài khoản</a> 
+                                <ul>
+                                    <li><a href="/Admin/Account/Group.aspx">Danh sách nhóm</a></li>
+                                    <li><a href="/Admin/Account/Customer.aspx">Danh sách khách hàng</a></li>
+                                    <li><a href="/Admin/Account/Newsletter.aspx">Newsletter</a></li>
+                                </ul>
+                            </li>
                             <li><a href="/Admin/Catalog/" class="menulevel0">Danh Mục</a> </li>
                             <li><a href="/Admin/Products/" class="menulevel0">Sản Phẩm</a> </li>
                             <li><a href="/Admin/Orders/" class="menulevel0">Quản Lý Đơn Đặt Hàng</a>

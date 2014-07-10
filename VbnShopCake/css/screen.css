@@ -62,7 +62,7 @@ p{line-height:16px;}
 	
 	/********** lev ********/
 	#lev{width:200px; float:left; margin:0 15px 0 0}
-		#lev h2{background:url(/images/bgd_title_01.gif) 0 0 no-repeat; color:#fff; font-size:1em; text-transform: capitalize; line-height:20px; padding:13px 5px 7px 10px; margin:0 0 10px 0}
+		#lev h2{background:url(/images/bgd_title_01.png) right 0 no-repeat; color:#fff; font-size:1em; text-transform: capitalize; line-height:20px; padding:13px 5px 7px 10px; margin:0 0 10px 0}
 		.levMenu{padding:0 10px; list-style:none;}
 		.levMenu li{}
 		.levMenu li a{background: url(/images/ico_plus.gif) 0 4px no-repeat;padding:0 0 0 15px; margin:0 0 7px 0; color:#9e0326; display:inline-block;}
@@ -221,4 +221,20 @@ a.breadrum:hover{text-decoration:underline;}
 .vdo-content{padding:10px 5px}
 .vdo-item{border: solid 1px #a7092a; background-color: White; padding: 10px 10px; margin: 0 3px; float: left;}
 
+.news .items {height: 90px; background: url(/images/bgd_line.gif) repeat-x 0 0; padding-top:8px}
+.news .items h2.title {background: none !important; border: none !important; padding: 0 !important}
+.news_des {font-weight: bold; padding-bottom: 10px;}
+
+#login {text-align:center}
+#login h2 {background:url(/images/bgd_title_01.png) right 0 no-repeat #9e0326; color:#fff; font-size:1em; line-height:20px; padding:13px 5px 7px 10px; margin:0 0 10px 0; border: none}
+#login .label {width: 95px; display:inline-block; text-align: left}
+#login div{margin-bottom:10px}
+
+hr{border:none; border-bottom:solid 1px #999; margin-bottom:12px}
+
+#form {}
+#form h2 {background:url(/images/bgd_title_01.png) right 0 no-repeat; color:#fff; font-size:1em; line-height:20px; padding:13px 5px 7px 10px; margin:0 0 10px 0; border: none; text-align:center}
+#form .label {width: 115px; display:inline-block; text-align: left}
+#form div{margin-bottom:10px}
+#form .button, #form #captcha {padding-left:118px}
 

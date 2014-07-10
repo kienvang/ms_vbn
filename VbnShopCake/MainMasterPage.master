@@ -30,7 +30,9 @@
     <script src="/Admin/js/jquery-ui-1.7.2.custom.min.js" type="text/javascript"></script>
 
     <link href="/Admin/css/ui-lightness/ui-1.7.2.custom.css" rel="stylesheet" type="text/css" />
+
     <script src="/js/jquery.slidemenu.js" type="text/javascript"></script>
+
     <link href="/css/jquery.slidemenu2.css" rel="stylesheet" type="text/css" />
     <asp:ContentPlaceHolder ID="header" runat="server">
     </asp:ContentPlaceHolder>
@@ -42,13 +44,13 @@
             <div id="header">
                 <h1>
                     <a href="<%= Library.Tools.UrlBuilder.RootUrl %>" title="Vietnam Bakery Network">
-                        <asp:Image ID="imgLogo" runat="server" Width="200px" Height="194px" ToolTip="Vietnam Bakery Network"
-                            AlternateText="Vietnam Bakery Network" />
+                        <asp:Image ID="imgLogo" runat="server" Width="200px" Height="194px" ToolTip="Mỹ Sướng Bakery"
+                            AlternateText="Mỹ Sướng Bakery" />
                     </a>
                 </h1>
                 <p>
-                    <asp:Image ID="imgBanner" runat="server" Width="750px" Height="177px" ToolTip="Vietnam Bakery Network"
-                        AlternateText="Vietnam Bakery Network" />
+                    <asp:Image ID="imgBanner" runat="server" Width="750px" Height="177px" ToolTip="Mỹ Sướng Bakery"
+                        AlternateText="Mỹ Sướng Bakery" />
                 </p>
             </div>
             <div id="nav">
@@ -76,19 +78,20 @@
                     thức thanh toán</a></li>
             </ul>--%>
             <p>
-                &copy;2009 Copyright by Vietnam Bakery Network<br />
+                &copy;2014 Copyright by My Suong Bakery<br />
                 Địa chỉ: C7/1A2 Phạm Hùng, Bình Hưng, Bình Chánh, TP. Hồ Chí Minh<br />
-                Số ĐT: 083 924 1 924 - WebSite: <a href="http://shop.vbn.vn" title="">shop.vbn.vn</a>
+                Số ĐT: 083 924 1 924 - WebSite: <a href="http://www.mysuong.com.vn" title="">www.mysuong.com.vn</a>
                 - Email: <a href="#" title="">mysuongbakery@yahoo.com</a>
             </p>
             <div>
                 <ul>
-                    <li><a href="http://vbn.com.vn" title="Trang chủ">Trang chủ</a></li>
+                    <li><a href="http://www.mysuong.com.vn" title="Trang chủ">Trang chủ</a></li>
                     <li><a href="<%= Library.Tools.UrlBuilder.RootUrl %>" title="Sản phẩm">Sản phẩm</a></li>
                     <li class="last"><a href="/lien-he.html" title="Liên hệ">Liên hệ</a></li>
                 </ul>
             </div>
         </div>
+    </div>
     </form>
 </body>
 </html>

@@ -9,6 +9,9 @@
     <h2 style="text-align: center">
         <asp:Label ID="lblSubject" runat="server"></asp:Label>
     </h2>
+    <div>
+        <asp:Label ID="lblDescription" runat="server"></asp:Label>
+    </div>
     <div style="min-height: 500px">
         <asp:Label ID="lblBody" runat="server"></asp:Label>
     </div>
